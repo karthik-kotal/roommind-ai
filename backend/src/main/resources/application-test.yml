@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:roommind_test_db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+
+  flyway:
+    enabled: false
+
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250655368566D5971
+    expiration-ms: 3600000
